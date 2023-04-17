@@ -5,9 +5,11 @@
             "cost": 0,
             "count": 2,
             "graft": false,
-            "specialRules": false,
+            "special": false,
             "revealReward": {
-                "persuasion": 2
+                "reward": {
+                    "persuasion": 2
+                }
             }
         },
         {
@@ -15,14 +17,16 @@
             "cost": 0,
             "count": 2,
             "graft": false,
-            "specialRules": false,
+            "special": false,
             "agentAccess": {
                 "standard": {
                     "landsraad": true
                 }
             },
             "revealReward": {
-                "strength": 1
+                "reward": {
+                    "strength": 1
+                }
             }
         },
         {
@@ -30,7 +34,7 @@
             "cost": 0,
             "count": 1,
             "graft": false,
-            "specialRules": false,
+            "special": false,
             "agentAccess": {
                 "standard": {
                     "factionAccess": {
@@ -42,7 +46,9 @@
                 }
             },
             "revealReward": {
-                "persuasion": 1
+                "reward": {
+                    "persuasion": 1
+                }
             }
         },
         {
@@ -50,18 +56,22 @@
             "cost": 0,
             "count": 2,
             "graft": false,
-            "specialRules": false,
+            "special": false,
             "agentAccess": {
                 "standard": {
                     "spiceTrade": true
                 }
             },
             "agentReward": {
-                "research": 1
+                "reward": {
+                    "research": 1
+                }
             },
             "revealReward": {
-                "persuasion": 1,
-                "specimen": 1
+                "reward": {
+                    "persuasion": 1,
+                    "specimen": 1
+                }
             }
         },
         {
@@ -69,14 +79,16 @@
             "cost": 0,
             "count": 1,
             "graft": true,
-            "specialRules": true,
+            "special": true,
             "agentAccess": {
                 "standard": {
                     "city": true
                 }
             },
             "revealReward": {
-                "persuasion": 1
+                "reward": {
+                    "persuasion": 1
+                }
             }
         },
         {
@@ -84,7 +96,7 @@
             "cost": 0,
             "count": 1,
             "graft": true,
-            "specialRules": false,
+            "special": false,
             "agentAccess": {
                 "standard": {
                     "factionAccess": {
@@ -96,7 +108,9 @@
                 }
             },
             "agentReward": {
-                "specialEffect": "Trash this card."
+                "reward": {
+                    "specialEffect": "Trash this card."
+                }
             }
         },
         {
@@ -104,7 +118,7 @@
             "cost": 0,
             "count": 1,
             "graft": false,
-            "specialRules": false,
+            "special": false,
             "agentAccess": {
                 "standard": {
                     "city": true,
@@ -113,10 +127,14 @@
                 }
             },
             "agentReward": {
-                "signetRingAbility": true
+                "reward": {
+                    "signetRingAbility": true
+                }
             },
             "revealReward": {
-                "persuasion": 1
+                "reward": {
+                    "persuasion": 1
+                }
             }
         }
     ],
@@ -3080,17 +3098,21 @@
             "cost": 2,
             "count": 1,
             "graft": true,
-            "specialRules": true,
+            "special": true,
             "agentAccess": {
                 "standard": {
                     "city": true
                 }
             },
             "agentReward": {
-                "specialEffect": "At the start of your Reveal turn, return the other grafted card from play to your hand."
+                "reward": {
+                    "specialEffect": "At the start of your Reveal turn, return the other grafted card from play to your hand."
+                }
             },
             "revealReward": {
-                "persuasion": 1
+                "reward": {
+                    "persuasion": 1
+                }
             }
         },
         {
@@ -3098,7 +3120,7 @@
             "cost": 2,
             "count": 1,
             "graft": true,
-            "specialRules": false,
+            "special": false,
             "agentAccess": {
                 "standard": {
                     "factionAccess": {
@@ -3109,10 +3131,14 @@
                 }
             },
             "agentReward": {
-                "drawCard": 1
+                "reward": {
+                    "drawCard": 1
+                }
             },
             "revealReward": {
-                "persuasion": 1
+                "reward": {
+                    "persuasion": 1
+                }
             }
         },
         {
@@ -3120,7 +3146,7 @@
             "cost": 2,
             "count": 1,
             "graft": false,
-            "specialRules": false,
+            "special": false,
             "agentAccess": {
                 "standard": {
                     "landsraad": true,
@@ -3131,14 +3157,18 @@
                 "tleilaxuIcon": 1
             },
             "agentReward": {
-                "geneticMarker": {
-                    "1": {
-                        "tleilaxuIcon": 1
+                "reward": {
+                    "geneticMarker": {
+                        "1": {
+                            "tleilaxuIcon": 1
+                        }
                     }
                 }
             },
             "revealReward": {
-                "persuasion": 1
+                "reward": {
+                    "persuasion": 1
+                }
             }
         },
         {
@@ -3146,18 +3176,22 @@
             "cost": 3,
             "count": 1,
             "graft": true,
-            "specialRules": true,
+            "special": true,
             "agentAccess": {
                 "standard": {
                     "city": true
                 }
             },
             "agentReward": {
-                "specialEffect": "This card has the same Agent box as the other grafted card."
+                "reward": {
+                    "specialEffect": "This card has the same Agent box as the other grafted card."
+                }
             },
             "revealReward": {
-                "persuasion": 1,
-                "strength": 1
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 1
+                }
             }
         },
         {
@@ -3165,7 +3199,7 @@
             "cost": 4,
             "count": 1,
             "graft": true,
-            "specialRules": true,
+            "special": true,
             "agentAccess": {
                 "standard": {
                     "city": true,
@@ -3173,12 +3207,16 @@
                 }
             },
             "agentReward": {
-                "specialEffect": "You may recall the agent you sent this turn."
+                "reward": {
+                    "specialEffect": "You may recall the agent you sent this turn."
+                }
             },
             "revealReward": {
-                "persuasion": 1,
-                "specimen": 1,
-                "strength": 1
+                "reward": {
+                    "persuasion": 1,
+                    "specimen": 1,
+                    "strength": 1
+                }
             }
         },
         {
@@ -3186,7 +3224,7 @@
             "cost": 1,
             "count": 1,
             "graft": false,
-            "specialRules": false,
+            "special": false,
             "agentAccess": {
                 "standard": {
                     "factionAccess": {
@@ -3203,7 +3241,9 @@
                 }
             },
             "revealReward": {
-                "persuasion": 1
+                "reward": {
+                    "persuasion": 1
+                }
             }
         },
         {
@@ -3211,7 +3251,7 @@
             "cost": 3,
             "count": 1,
             "graft": false,
-            "specialRules": false,
+            "special": false,
             "agentAccess": {
                 "standard": {
                     "landsraad": true,
@@ -3230,8 +3270,10 @@
                 }
             },
             "revealReward": {
-                "persuasion": 1,
-                "strength": 1
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 1
+                }
             }
         },
         {
@@ -3239,7 +3281,7 @@
             "cost": 3,
             "count": 1,
             "graft": false,
-            "specialRules": false,
+            "special": false,
             "agentAccess": {
                 "standard": {
                     "city": true,
@@ -3248,18 +3290,22 @@
                 }
             },
             "agentReward": {
-                "research": 1,
-                "geneticMarker": {
-                    "2": {
-                        "trashedReward": {
-                            "victoryPoint": 1
+                "reward": {
+                    "geneticMarker": {
+                        "2": {
+                            "trashedReward": {
+                                "victoryPoint": 1
+                            }
                         }
-                    }
+                    },
+                    "research": 1
                 }
             },
             "revealReward": {
-                "persuasion": 1,
-                "strength": 1
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 1
+                }
             }
         },
         {
@@ -3267,7 +3313,7 @@
             "cost": 3,
             "count": 1,
             "graft": true,
-            "specialRules": false,
+            "special": false,
             "agentAccess": {
                 "standard": {
                     "city": true
@@ -3282,8 +3328,10 @@
                 }
             },
             "revealReward": {
-                "persuasion": 1,
-                "strength": 1
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 1
+                }
             }
         },
         {
@@ -3291,23 +3339,27 @@
             "cost": 2,
             "count": 1,
             "graft": true,
-            "specialRules": true,
+            "special": true,
             "agentAccess": {
                 "standard": {
                     "city": true
                 }
             },
             "agentReward": {
-                "drawCard": 1,
-                "geneticMarker": {
-                    "2": {
-                        "intrigueCard": 1
-                    }
-                },
-                "specialEffect": "Enemy Agents don't block your Agent this turn."
+                "reward": {
+                    "drawCard": 1,
+                    "geneticMarker": {
+                        "2": {
+                            "intrigueCard": 1
+                        }
+                    },
+                    "specialEffect": "Enemy Agents don't block your Agent this turn."
+                }
             },
             "revealReward": {
-                "persuasion": 1
+                "reward": {
+                    "persuasion": 1
+                }
             }
         },
         {
@@ -3315,7 +3367,7 @@
             "cost": 1,
             "count": 1,
             "graft": true,
-            "specialRules": false,
+            "special": false,
             "agentAccess": {
                 "standard": {
                     "factionAccess": {
@@ -3327,7 +3379,9 @@
                 }
             },
             "revealReward": {
-                "persuasion": 1
+                "reward": {
+                    "persuasion": 1
+                }
             }
         },
         {
@@ -3335,7 +3389,7 @@
             "cost": 3,
             "count": 1,
             "graft": true,
-            "specialRules": false,
+            "special": false,
             "agentAccess": {
                 "standard": {
                     "landsraad": true,
@@ -3354,8 +3408,10 @@
                 }
             },
             "revealReward": {
-                "persuasion": 1,
-                "strength": 1
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 1
+                }
             }
         },
         {
@@ -3363,14 +3419,13 @@
             "cost": 2,
             "count": 1,
             "graft": true,
-            "specialRules": true,
+            "special": true,
             "agentAccess": {
                 "standard": {
                     "landsraad": true
                 }
             },
             "agentReward": {
-                "specialEffect": "Gain 1 Solari for each Agent icon on tthe other grafted card.",
                 "tradeReward": {
                     "cost": {
                         "solari": 5,
@@ -3378,10 +3433,15 @@
                             "tleilaxuIcon": 1
                         }
                     }
+                },
+                "reward": {
+                    "specialEffect": "Gain 1 Solari for each Agent icon on tthe other grafted card."
                 }
             },
             "revealReward": {
-                "persuasion": 1
+                "reward": {
+                    "persuasion": 1
+                }
             }
         },
         {
@@ -3389,7 +3449,7 @@
             "cost": 3,
             "count": 1,
             "graft": true,
-            "specialRules": true,
+            "special": true,
             "agentAccess": {
                 "standard": {
                     "city": true,
@@ -3397,11 +3457,15 @@
                 }
             },
             "agentReward": {
-                "specialEffect": "If you sent an Agent to a Faction board space this turn, trash one of the grafted cards and gain an additional Influence with that Faction."
+                "reward": {
+                    "specialEffect": "If you sent an Agent to a Faction board space this turn, trash one of the grafted cards and gain an additional Influence with that Faction."
+                }
             },
             "revealReward": {
-                "persuasion": 1,
-                "strength": 1
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 1
+                }
             }
         },
         {
@@ -3409,7 +3473,7 @@
             "cost": 1,
             "count": 1,
             "graft": false,
-            "specialRules": false,
+            "special": false,
             "agentAccess": {
                 "standard": {
                     "factionAccess": {
@@ -3421,7 +3485,9 @@
                 "tleilaxuIcon": 1
             },
             "revealReward": {
-                "persuasion": 1
+                "reward": {
+                    "persuasion": 1
+                }
             }
         },
         {
@@ -3429,7 +3495,7 @@
             "cost": 2,
             "count": 1,
             "graft": true,
-            "specialRules": false,
+            "special": false,
             "agentAccess": {
                 "standard": {
                     "factionAccess": {
@@ -3448,7 +3514,9 @@
                 }
             },
             "revealReward": {
-                "persuasion": 1
+                "reward": {
+                    "persuasion": 1
+                }
             }
         },
         {
@@ -3456,17 +3524,21 @@
             "cost": 2,
             "count": 1,
             "graft": false,
-            "specialRules": false,
+            "special": false,
             "agentAccess": {
                 "standard": {
                     "landsraad": true
                 }
             },
             "agentReward": {
-                "troop": 2
+                "reward": {
+                    "troop": 2
+                }
             },
             "revealReward": {
-                "persuasion": 1
+                "reward": {
+                    "persuasion": 1
+                }
             }
         },
         {
@@ -3474,21 +3546,25 @@
             "cost": 1,
             "count": 1,
             "graft": false,
-            "specialRules": false,
+            "special": false,
             "agentAccess": {
                 "standard": {
                     "landsraad": true
                 }
             },
             "agentReward": {
-                "drawCard": 1,
                 "graftedReward": {
                     "research": 1,
                     "troop": 1
+                },
+                "reward": {
+                    "drawCard": 1
                 }
             },
             "revealReward": {
-                "persuasion": 1
+                "reward": {
+                    "persuasion": 1
+                }
             }
         },
         {
@@ -3496,14 +3572,18 @@
             "cost": 4,
             "count": 1,
             "graft": true,
-            "specialRules": true,
+            "special": true,
             "agentReward": {
-                "specialEffect": "You may graft this to a card in the Imperium Row without acquiring it. If you do, trash that card at the end of your turn."
+                "reward": {
+                    "specialEffect": "You may graft this to a card in the Imperium Row without acquiring it. If you do, trash that card at the end of your turn."
+                }
             },
             "revealReward": {
-                "persuasion": 1,
-                "specimen": 1,
-                "strength": 1
+                "reward": {
+                    "persuasion": 1,
+                    "specimen": 1,
+                    "strength": 1
+                }
             }
         },
         {
@@ -3511,22 +3591,26 @@
             "cost": 3,
             "count": 1,
             "graft": true,
-            "specialRules": false,
+            "special": false,
             "agentAccess": {
                 "standard": {
                     "spiceTrade": true
                 }
             },
             "agentReward": {
-                "geneticMarker": {
-                    "1": {
-                        "drawCard": 2
+                "reward": {
+                    "geneticMarker": {
+                        "1": {
+                            "drawCard": 2
+                        }
                     }
                 }
             },
             "revealReward": {
-                "persuasion": 1,
-                "strength": 1
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 1
+                }
             }
         }
     ]
