@@ -1,0 +1,3533 @@
+{
+    "startingDeck": [
+        {
+            "name": "convincingArgument",
+            "cost": 0,
+            "count": 2,
+            "graft": false,
+            "specialRules": false,
+            "revealReward": {
+                "persuasion": 2
+            }
+        },
+        {
+            "name": "dagger",
+            "cost": 0,
+            "count": 2,
+            "graft": false,
+            "specialRules": false,
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true
+                }
+            },
+            "revealReward": {
+                "strength": 1
+            }
+        },
+        {
+            "name": "diplomacy",
+            "cost": 0,
+            "count": 1,
+            "graft": false,
+            "specialRules": false,
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "emperor": true,
+                        "spacingGuild": true,
+                        "beneGesserit": true,
+                        "fremen": true
+                    }
+                }
+            },
+            "revealReward": {
+                "persuasion": 1
+            }
+        },
+        {
+            "name": "experimentation",
+            "cost": 0,
+            "count": 2,
+            "graft": false,
+            "specialRules": false,
+            "agentAccess": {
+                "standard": {
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "research": 1
+            },
+            "revealReward": {
+                "persuasion": 1,
+                "specimen": 1
+            }
+        },
+        {
+            "name": "reconnaissance",
+            "cost": 0,
+            "count": 1,
+            "graft": true,
+            "specialRules": true,
+            "agentAccess": {
+                "standard": {
+                    "city": true
+                }
+            },
+            "revealReward": {
+                "persuasion": 1
+            }
+        },
+        {
+            "name": "seekAllies",
+            "cost": 0,
+            "count": 1,
+            "graft": true,
+            "specialRules": false,
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "emperor": true,
+                        "spacingGuild": true,
+                        "beneGesserit": true,
+                        "fremen": true
+                    }
+                }
+            },
+            "agentReward": {
+                "specialEffect": "Trash this card."
+            }
+        },
+        {
+            "name": "signetRing",
+            "cost": 0,
+            "count": 1,
+            "graft": false,
+            "specialRules": false,
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "landsraad": true,
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "signetRingAbility": true
+            },
+            "revealReward": {
+                "persuasion": 1
+            }
+        }
+    ],
+    "imperiumRowDeck": [
+        {
+            "name": "beneTleilaxResearcher",
+            "cost": 4,
+            "count": 1,
+            "graft": true,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "research": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "geneticMarker": {
+                        "1": {
+                            "persuasion": 1
+                        },
+                        "2": {
+                            "persuasion": 1
+                        }
+                    },
+                    "persuasion": 1
+                }
+            }
+        },
+        {
+            "name": "tleilaxuMaster",
+            "cost": 5,
+            "count": 2,
+            "graft": false,
+            "special": true,
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true,
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "geneticMarker": {
+                        "1": {
+                            "acquireCard": "You may acquire a card that costs 6 or less."
+                        },
+                        "2": {
+                            "specialEffect": "Put that card in your hand."
+                        }
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "research": 2
+                }
+            }
+        },
+        {
+            "name": "imperialSpy",
+            "cost": 2,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "emperor": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "emperor": true
+                    }
+                }
+            },
+            "trashedReward": {
+                "intrigueCard": 1
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 1
+                }
+            }
+        },
+        {
+            "name": "treachery",
+            "cost": 6,
+            "count": 2,
+            "graft": false,
+            "special": true,
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "emperor": true,
+                        "spacingGuild": true,
+                        "beneGesserit": true,
+                        "fremen": true
+                    }
+                }
+            },
+            "agentReward": {
+                "trashedReward": {
+                    "influence": {
+                        "specialEffect": "Gain two influence instead of one. Trash this card"
+                    },
+                    "troop": 2,
+                    "specialEffect": "Deploy these troops to the conflict."
+                }
+            },
+            "droppedReward": {
+                "troop": 2,
+                "specialEffect": "Deploy these troops to the conflict."
+            },
+            "trashedReward": {
+                "troop": 2,
+                "specialEffect": "Deploy these troops to the conflict."
+            },
+            "revealReward": {
+                "reward": {
+                    "specialEffect": "Deploy these troops to the conflict.",
+                    "troop": 2
+                }
+            }
+        },
+        {
+            "name": "powerPlay",
+            "cost": 5,
+            "count": 3,
+            "graft": false,
+            "special": true,
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "emperor": true,
+                        "spacingGuild": true,
+                        "beneGesserit": true,
+                        "fremen": true
+                    }
+                }
+            },
+            "agentReward": {
+                "trashedReward": {
+                    "influence": {
+                        "specialEffect": "Gain two influence instead of one. Trash this card"
+                    }
+                }
+            }
+        },
+        {
+            "name": "boundlessAmbition",
+            "cost": 5,
+            "count": 1,
+            "graft": false,
+            "special": true,
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "emperor": true,
+                        "spacingGuild": true,
+                        "beneGesserit": true,
+                        "fremen": true
+                    }
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "signetRingAbility": true
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "specialEffect": "Acquire a card that costs 5 or less."
+                }
+            }
+        },
+        {
+            "name": "sardaukarInfantry",
+            "cost": 1,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "emperor": true
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 2
+                }
+            }
+        },
+        {
+            "name": "drYueh",
+            "cost": 1,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "city": true
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "drawCard": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1
+                }
+            }
+        },
+        {
+            "name": "stillsuitManufacturer",
+            "cost": 5,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "fremen": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "factionAccess": {
+                        "fremen": true
+                    }
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "specialEffect": "If Fremen Alliance: Return this card from play to your hand.",
+                    "water": 1
+                }
+            },
+            "revealReward": {
+                "fremenBond": {
+                    "spice": 2
+                },
+                "reward": {
+                    "persuasion": 1
+                }
+            }
+        },
+        {
+            "name": "spaceTravel",
+            "cost": 3,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "spacingGuild": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "spacingGuild": true
+                    }
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "drawCard": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 2
+                }
+            }
+        },
+        {
+            "name": "duncanIdaho",
+            "cost": 4,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "city": true
+                }
+            },
+            "agentReward": {
+                "tradeReward": {
+                    "cost": {
+                        "water": 1
+                    },
+                    "reward": {
+                        "troop": 1,
+                        "drawCard": 1
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "strength": 2,
+                    "water": 1
+                }
+            }
+        },
+        {
+            "name": "theVoice",
+            "cost": 2,
+            "count": 2,
+            "graft": false,
+            "special": true,
+            "tag": {
+                "beneGesserit": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "specialEffect": "Choose any board space. Opponents can't send their next agents there this round."
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 2
+                }
+            }
+        },
+        {
+            "name": "beneGesseritSister",
+            "cost": 3,
+            "count": 3,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "beneGesserit": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true,
+                    "factionAccess": {
+                        "beneGesserit": true
+                    }
+                }
+            },
+            "revealReward": {
+                "choiceReward": {
+                    "persuasion": 2,
+                    "strength": 2
+                }
+            }
+        },
+        {
+            "name": "dissectingKit",
+            "cost": 2,
+            "count": 2,
+            "graft": true,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "landsraad": true
+                }
+            },
+            "agentReward": {
+                "trashReward": {
+                    "specimen": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "geneticMarker": {
+                        "1": {
+                            "tleilaxuIcon": 1
+                        }
+                    },
+                    "persuasion": 1
+                }
+            }
+        },
+        {
+            "name": "clandestineMeeting",
+            "cost": 4,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": "beneGesserit",
+            "agentReward": {
+                "reward": {
+                    "gainInfluence": {
+                        "beneGesserit": 1
+                    },
+                    "intrigueCard": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 2
+                }
+            }
+        },
+        {
+            "name": "ixGuildCompact",
+            "cost": 3,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": "spacingGuild",
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "spacingGuild": true
+                    }
+                }
+            },
+            "agentReward": {
+                "dropReward": {
+                    "drop": 2,
+                    "reward": {
+                        "dreadnought": 1
+                    }
+                }
+            },
+            "droppedReward": {
+                "negotiator": 2
+            },
+            "trashedReward": {
+                "negotiator": 2
+            },
+            "revealReward": {
+                "reward": {
+                    "negotiator": 2
+                }
+            }
+        },
+        {
+            "name": "scout",
+            "cost": 1,
+            "count": 2,
+            "graft": false,
+            "special": true,
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "spiceTrade": true
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "specialEffect": "Retreat up to two of your troops.",
+                    "strength": 1
+                }
+            }
+        },
+        {
+            "name": "otherMemory",
+            "cost": 1,
+            "count": 1,
+            "graft": false,
+            "special": true,
+            "tag": {
+                "beneGesserit": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "choiceReward": {
+                    "drawCard": 1,
+                    "specialEffect": "Draw a Benne Gesserit card from your discard pile."
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 2
+                }
+            }
+        },
+        {
+            "name": "ixianEngineer",
+            "cost": 5,
+            "count": 2,
+            "graft": false,
+            "special": true,
+            "agentAccess": {
+                "standard": {
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "techTile": true
+                }
+            },
+            "revealReward": {
+                "conditionalReward": {
+                    "condition": "If you have three or more Tech tiles then trash this card.",
+                    "reward": {
+                        "victoryPoint": 1
+                    }
+                }
+            }
+        },
+        {
+            "name": "guildAdministrator",
+            "cost": 2,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "spacingGuild": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "spiceTrade": true,
+                    "factionAccess": {
+                        "spacingGuild": true
+                    }
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "trashCard": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1
+                }
+            }
+        },
+        {
+            "name": "waterPeddler",
+            "cost": 1,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "purchaseReward": {
+                "water": 1
+            },
+            "droppedReward": {
+                "water": 1
+            },
+            "trashedReward": {
+                "water": 1
+            },
+            "revealReward": {
+                "reward": {
+                    "water": 1
+                }
+            }
+        },
+        {
+            "name": "sietchReverendMother",
+            "cost": 4,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "beneGesserit": true,
+                "fremen": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "beneGesserit": true,
+                        "fremen": true
+                    }
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "trashCard": 1
+                }
+            },
+            "revealReward": {
+                "fremenBond": {
+                    "persuasion": 3,
+                    "spice": 1
+                }
+            }
+        },
+        {
+            "name": "spiceHunter",
+            "cost": 2,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "fremen": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "spiceTrade": true,
+                    "factionAccess": {
+                        "fremen": true
+                    }
+                }
+            },
+            "revealReward": {
+                "fremenBond": {
+                    "spice": 1
+                },
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 1
+                }
+            }
+        },
+        {
+            "name": "fremenCamp",
+            "cost": 4,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "fremen": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "tradeReward": {
+                    "cost": {
+                        "spice": 2
+                    },
+                    "reward": {
+                        "troop": 3
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 2,
+                    "strength": 1
+                }
+            }
+        },
+        {
+            "name": "shiftingAllegiances",
+            "cost": 3,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true,
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "tradeReward": {
+                    "cost": {
+                        "loseInfluence": {
+                            "any": 1
+                        },
+                        "spice": 2
+                    },
+                    "reward": {
+                        "gainInfluence": {
+                            "any": "double"
+                        }
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 2
+                }
+            }
+        },
+        {
+            "name": "bountyHunter",
+            "cost": 1,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "infiltrate": {
+                    "city": true
+                }
+            },
+            "agentReward": {
+                "infiltrateReward": {
+                    "solari": 2
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 1
+                }
+            }
+        },
+        {
+            "name": "showOfStrength",
+            "cost": 3,
+            "count": 1,
+            "graft": false,
+            "special": true,
+            "tag": {
+                "emperor": true,
+                "fremen": true
+            },
+            "conditionalAgentAccess": {
+                "condition": "If you have more deployed troops than each opponent",
+                "agentAccess": {
+                    "standard": {
+                        "landsraad": true,
+                        "spiceTrade": true
+                    }
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "drawCard": 2
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 2
+                }
+            }
+        },
+        {
+            "name": "beneTleilaxLab",
+            "cost": 2,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "specimen": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "geneticMarker": {
+                        "1": {
+                            "spice": 1
+                        }
+                    },
+                    "persuasion": 1
+                }
+            }
+        },
+        {
+            "name": "testOfHumanity",
+            "cost": 3,
+            "count": 1,
+            "graft": false,
+            "special": true,
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "landsraad": true,
+                    "factionAccess": {
+                        "beneGesserit": true
+                    }
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "specialEffect": "Each opponent chooses: Discard a card -OR- Lose a deployed troop."
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 2
+                }
+            }
+        },
+        {
+            "name": "sarduakarQuartermaster",
+            "cost": 2,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "emperor": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "landsraad": true
+                }
+            },
+            "agentReward": {
+                "graftedReward": {
+                    "troop": 1,
+                    "drawCard": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 2
+                }
+            }
+        },
+        {
+            "name": "gunThopter",
+            "cost": 4,
+            "count": 2,
+            "graft": false,
+            "special": true,
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "specialEffect": "Each opponent loses one garrisoned troop."
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "specialEffect": "You may deploy a troop from your garrison to the Conflict.",
+                    "strength": 3
+                }
+            }
+        },
+        {
+            "name": "beneGesseritInitiate",
+            "cost": 3,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "landsraad": true,
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "drawCard": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1
+                }
+            }
+        },
+        {
+            "name": "appropriate",
+            "cost": 5,
+            "count": 1,
+            "graft": false,
+            "special": true,
+            "tag": {
+                "emperor": 1
+            },
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true,
+                    "spiceTrade": true
+                }
+            },
+            "purchaseReward": {
+                "moveFreighter": 1
+            },
+            "agentReward": {
+                "conditionalReward": {
+                    "condition": "If you have 2 Emperor Influence",
+                    "reward": {
+                        "techTile": true,
+                        "specialPrice": "You may use Solari instead of spice for this purchase."
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 2
+                }
+            }
+        },
+        {
+            "name": "imperiumCeremony",
+            "cost": 6,
+            "count": 1,
+            "graft": false,
+            "special": true,
+            "tag": {
+                "emperor": 1,
+                "spacingGuild": 1
+            },
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true,
+                    "factionAccess": {
+                        "emperor": true,
+                        "spacingGuild": true
+                    }
+                }
+            },
+            "agentReward": {
+                "conditionalReward": {
+                    "condition": "Look at the top two cards of the Intrigue deck. Keep one and put the other back on top.",
+                    "reward": {
+                        "intrigueCard": 1
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 3
+                }
+            }
+        },
+        {
+            "name": "choamDelegate",
+            "cost": 1,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "infiltrate": {
+                    "spiceTrade": true
+                }
+            },
+            "droppedReward": {
+                "solari": 3
+            },
+            "trashedReward": {
+                "solari": 3
+            },
+            "revealReward": {
+                "reward": {
+                    "solari": 3
+                }
+            }
+        },
+        {
+            "name": "blankSlate",
+            "cost": 1,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "landsraad": true,
+                    "spiceTrade": true
+                }
+            },
+            "graftedReward": {
+                "agentAccess": {
+                    "standard": {
+                        "factionAccess": {
+                            "emperor": true,
+                            "spacingGuild": true,
+                            "beneGesserit": true,
+                            "fremen": true
+                        }
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1
+                }
+            }
+        },
+        {
+            "name": "longReach",
+            "cost": 6,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "beneGesserit": true
+            },
+            "conditionalAgentAccess": {
+                "condition": "If you have another Bene Gesserit card in play",
+                "agentAccess": {
+                    "standard": {
+                        "city": true,
+                        "landsraad": true,
+                        "spiceTrade": true
+                    }
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "gainInfluence": {
+                        "any": 2
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "intrigueCard": 1,
+                    "persuasion": 1
+                }
+            }
+        },
+        {
+            "name": "highPriorityTravel",
+            "cost": 1,
+            "count": 2,
+            "graft": false,
+            "special": true,
+            "tag": {
+                "spacingGuild": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true,
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "conditionalReward": {
+                    "condition": "If you have 2 Spacing Guild influence",
+                    "choiceReward": {
+                        "combatSpace": true,
+                        "drawCard": 1
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "solari": 1
+                }
+            }
+        },
+        {
+            "name": "inTheShadows",
+            "cost": 2,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "beneGesserit": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "landsraad": true
+                }
+            },
+            "agentReward": {
+                "conditionalReward": {
+                    "condition": "If you have 2 Bene Gesserit influence",
+                    "dropReward": {
+                        "drop": 1,
+                        "reward": {
+                            "gainInfluence": {
+                                "choiceReward": {
+                                    "emperor": 1,
+                                    "spacingGuild": 1,
+                                    "fremen": 1
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "droppedReward": {
+                "gainInfluence": {
+                    "beneGesserit": 1
+                }
+            },
+            "trashedReward": {
+                "gainInfluence": {
+                    "beneGesserit": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "gainInfluence": {
+                        "beneGesserit": 1
+                    }
+                }
+            }
+        },
+        {
+            "name": "gurneyHalleck",
+            "cost": 6,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "city": true
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "drawCard": 1,
+                    "troop": 2
+                }
+            },
+            "revealReward": {
+                "tradeReward": {
+                    "cost": {
+                        "solari": 3
+                    },
+                    "reward": {
+                        "troop": 2,
+                        "specialEffect": "You may deploy these troops to the Conflict."
+                    }
+                },
+                "reward": {
+                    "persuasion": 2
+                }
+            }
+        },
+        {
+            "name": "fullScaleAssault",
+            "cost": 8,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "emperor": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "factionAccess": {
+                        "emperor": true
+                    }
+                }
+            },
+            "purchaseReward": {
+                "dreadnought": 1
+            },
+            "agentReward": {
+                "reward": {
+                    "troop": 2
+                }
+            },
+            "revealReward": {
+                "conditionalReward": {
+                    "condition": "For each of your dreadnoughts in the Conflict.",
+                    "strength": 3
+                },
+                "reward": {
+                    "persuasion": 2
+                }
+            }
+        },
+        {
+            "name": "imperialShockTrooper",
+            "cost": 3,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "emperor": true
+            },
+            "revealReward": {
+                "conditionalReward": {
+                    "condition": "If you have an Agent on an Emperor board space.",
+                    "strength": 3
+                },
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 2
+                }
+            }
+        },
+        {
+            "name": "guildAmbassador",
+            "cost": 4,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "spacingGuild": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true
+                }
+            },
+            "agentReward": {
+                "choiceReward": {
+                    "gainInfluence": {
+                        "spacingGuild": 1
+                    },
+                    "spice": 2
+                }
+            },
+            "revealReward": {
+                "conditionalReward": {
+                    "condition": "If you have Spacing Guild Alliance.",
+                    "reward": {
+                        "tradeReward": {
+                            "cost": {
+                                "spice": 3
+                            },
+                            "reward": {
+                                "victoryPoint": 1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "thufirHawat",
+            "cost": 5,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "spiceTrade": true,
+                    "factionAccess": {
+                        "emperor": true,
+                        "spacingGuild": true,
+                        "beneGesserit": true,
+                        "fremen": true
+                    }
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "drawCard": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "intrigueCard": 1,
+                    "persuasion": 1
+                }
+            }
+        },
+        {
+            "name": "wormRiders",
+            "cost": 6,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "spice": 2
+                }
+            },
+            "revealReward": {
+                "conditionalReward": {
+                    "condition": "If you have 2 Fremen influence",
+                    "reward": {
+                        "strength": 4
+                    }
+                },
+                "bonusReward": {
+                    "conditionalReward": {
+                        "condition": "If you have Fremen Alliance",
+                        "reward": {
+                            "strength": 2
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "guildBankers",
+            "cost": 3,
+            "count": 1,
+            "graft": false,
+            "special": true,
+            "tag": {
+                "spacingGuild": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true,
+                    "factionAccess": {
+                        "emperor": true,
+                        "spacingGuild": true
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "specialEffect": "The Spice Must Flow costs 3 less to acquire this turn"
+                }
+            }
+        },
+        {
+            "name": "arrakisRecruiter",
+            "cost": 2,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "city": true
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "troop": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 1
+                }
+            }
+        },
+        {
+            "name": "plannedCoupling",
+            "cost": 3,
+            "count": 2,
+            "graft": true,
+            "special": false,
+            "tag": {
+                "beneGesserit": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "beneGesserit": true
+                    }
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "drawCard": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1
+                }
+            }
+        },
+        {
+            "name": "opulence",
+            "cost": 6,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "emperor": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "emperor": true
+                    }
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "solari": 3
+                }
+            },
+            "revealReward": {
+                "tradeReward": {
+                    "cost": {
+                        "solari": 6
+                    },
+                    "reward": {
+                        "victoryPoint": 1
+                    }
+                },
+                "reward": {
+                    "persuasion": 1
+                }
+            }
+        },
+        {
+            "name": "courtIntrigue",
+            "cost": 2,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "emperor": true
+            },
+            "agentAccess": {
+                "infiltrate": {
+                    "factionAccess": {
+                        "emperor": true
+                    }
+                }
+            },
+            "agentReward": {
+                "tradeReward": {
+                    "cost": {
+                        "intrigueCard": 1
+                    },
+                    "reward": {
+                        "intrigueCard": 1
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 1
+                }
+            }
+        },
+        {
+            "name": "crysKnife",
+            "cost": 3,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "fremen": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "spiceTrade": true,
+                    "factionAccess": {
+                        "fremen": true
+                    }
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "solari": 1
+                }
+            },
+            "revealReward": {
+                "fremenBond": {
+                    "gainInfluence": {
+                        "fremen": 1
+                    }
+                },
+                "reward": {
+                    "strength": 1
+                }
+            }
+        },
+        {
+            "name": "truthsayer",
+            "cost": 3,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "emperor": true,
+                "beneGesserit": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true,
+                    "factionAccess": {
+                        "emperor": true,
+                        "beneGesserit": true
+                    }
+                }
+            },
+            "agentReward": {
+                "dropReward": {
+                    "drop": 1,
+                    "reward": {
+                        "drawCard": 1
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 1
+                }
+            }
+        },
+        {
+            "name": "throneRoomPolitics",
+            "cost": 4,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "emperor": true,
+                "beneGesserit": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "emperor": true
+                    }
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "trashCard": 1,
+                    "troop": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "gainInfluence": {
+                        "beneGesserit": 1
+                    },
+                    "persuasion": 1
+                }
+            }
+        },
+        {
+            "name": "stilgar",
+            "cost": 5,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "fremen": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "spiceTrade": true,
+                    "factionAccess": {
+                        "fremen": true
+                    }
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "water": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 2,
+                    "strength": 3
+                }
+            }
+        },
+        {
+            "name": "choamDictatorship",
+            "cost": 8,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "purchaseReward": {
+                "gainInfluence": {
+                    "emperor": 1,
+                    "spacingGuild": 1,
+                    "beneGesserit": 1,
+                    "fremen": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "solari": 3
+                }
+            }
+        },
+        {
+            "name": "assassinationMission",
+            "cost": 1,
+            "count": 2,
+            "graft": false,
+            "special": true,
+            "conditionalReward": {
+                "condition": "When this card is trashed",
+                "reward": {
+                    "solari": 4
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "solari": 1,
+                    "strength": 1
+                }
+            }
+        },
+        {
+            "name": "kwisatzHaderach",
+            "cost": 8,
+            "count": 1,
+            "graft": false,
+            "special": true,
+            "tag": {
+                "beneGesserit": true
+            },
+            "agentAccess": {
+                "specialEffect": "Send one of your Agents from anywhere to ANY board space (even if occupied)."
+            },
+            "agentReward": {
+                "reward": {
+                    "drawCard": 1
+                }
+            }
+        },
+        {
+            "name": "landingRights",
+            "cost": 4,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "spacingGuild": true
+            },
+            "agentAccess": {
+                "city": true
+            },
+            "agentReward": {
+                "reward": {
+                    "moveFreighter": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 2
+                }
+            }
+        },
+        {
+            "name": "replacementEyes",
+            "cost": 5,
+            "count": 1,
+            "graft": true,
+            "special": false,
+            "agentAccess": {
+                "city": true
+            },
+            "agentReward": {
+                "conditionalReward": {
+                    "condition": "Trash a card.",
+                    "reward": {
+                        "drawCard": 1
+                    }
+                }
+            },
+            "trashedReward": {
+                "tleilaxuIcon": 1
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 1
+                }
+            }
+        },
+        {
+            "name": "negotiatedWithdrawal",
+            "cost": 4,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "city": true,
+                "landsraad": true,
+                "spiceTrade": true
+            },
+            "revealReward": {
+                "conditionalReward": {
+                    "condition": "Retreat three of your units.",
+                    "reward": {
+                        "gainInfluence": {
+                            "any": 1
+                        }
+                    }
+                },
+                "reward": {
+                    "persuasion": 2
+                }
+            }
+        },
+        {
+            "name": "imperialBashar",
+            "cost": 4,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "emperor": 1
+            },
+            "agentAccess": {
+                "city": true
+            },
+            "agentReward": {
+                "choiceReward": {
+                    "troop": 1,
+                    "trashCard": 1
+                }
+            },
+            "revealReward": {
+                "conditionalReward": {
+                    "condition": "For each other revealed card that provides one or more strength this turn",
+                    "reward": {
+                        "strength": 1
+                    }
+                },
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 2
+                }
+            }
+        },
+        {
+            "name": "jamis",
+            "cost": 2,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "fremen": 1
+            },
+            "agentAccess": {
+                "infiltrate": {
+                    "factionAccess": {
+                        "fremen": true
+                    }
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "trashCard": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 2
+                }
+            }
+        },
+        {
+            "name": "shadoutMapes",
+            "cost": 2,
+            "count": 1,
+            "graft": false,
+            "special": true,
+            "tag": {
+                "fremen": 1
+            },
+            "agentAccess": {
+                "standard": {
+                    "spiceTrade": true,
+                    "factionAccess": {
+                        "fremen": true
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "specialEffect": "You may deploy or retreat one of your troops.",
+                    "strength": 1
+                }
+            }
+        },
+        {
+            "name": "smugglersThopter",
+            "cost": 4,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "spacingGuild": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "conditionalReward": {
+                    "condition": "If you have 2 Spacing Guild influence",
+                    "reward": {
+                        "drawCard": 2
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "spice": 1
+                }
+            }
+        },
+        {
+            "name": "occupation",
+            "cost": 8,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "spacingGuild": 1
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "spiceTrade": true,
+                    "factionAccess": {
+                        "emperor": true,
+                        "spacingGuild": true,
+                        "beneGesserit": true,
+                        "fremen": true
+                    }
+                }
+            },
+            "purchaseReward": {
+                "troop": 3
+            },
+            "agentReward": {
+                "reward": {
+                    "combatSpace": true,
+                    "drawCard": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "spice": 1,
+                    "troop": 1,
+                    "water": 1
+                }
+            }
+        },
+        {
+            "name": "jessicaOfArrakis",
+            "cost": 3,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "beneGesserit": 1
+            },
+            "agentAccess": {
+                "standard": {
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "conditionalReward": {
+                    "condition": "If you have another Bene Gesserit card in play",
+                    "reward": {
+                        "drawCard": 2
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 2
+                }
+            }
+        },
+        {
+            "name": "geneManipulation",
+            "cost": 3,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "beneGesserit": 1
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "landsraad": true
+                }
+            },
+            "agentReward": {
+                "conditionalReward": {
+                    "condition": "If you have another Bene Gesserit card in play",
+                    "reward": {
+                        "spice": 2
+                    }
+                },
+                "reward": {
+                    "trashCard": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 2
+                }
+            }
+        },
+        {
+            "name": "spiceSmugglers",
+            "cost": 2,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "spacingGuild": 1
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true
+                }
+            },
+            "agentReward": {
+                "tradeReward": {
+                    "cost": {
+                        "spice": 2
+                    },
+                    "reward": {
+                        "gainInfluence": {
+                            "spacingGuild": 1
+                        },
+                        "solari": 3
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 1
+                }
+            }
+        },
+        {
+            "name": "carryall",
+            "cost": 5,
+            "count": 1,
+            "graft": false,
+            "special": true,
+            "agentAccess": {
+                "standard": {
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "specialEffect": "Double the base (not bonus) spice you harvest with this Agent."
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "spice": 1
+                }
+            }
+        },
+        {
+            "name": "spiritualFervor",
+            "cost": 3,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "spiceTrade": true
+                }
+            },
+            "purchaseReward": {
+                "research": 1
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "specimen": 1
+                }
+            }
+        },
+        {
+            "name": "sardaukarLegion",
+            "cost": 5,
+            "count": 2,
+            "graft": false,
+            "special": true,
+            "tag": {
+                "emperor": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true,
+                    "factionAccess": {
+                        "emperor": true
+                    }
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "troop": 2
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "specialEffect": "Deploy up to three troops from your garrison to the Conflict"
+                }
+            }
+        },
+        {
+            "name": "tleilaxuSurgeon",
+            "cost": 3,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "factionAccess": {
+                        "emperor": true
+                    }
+                }
+            },
+            "agentReward": {
+                "tradeReward": {
+                    "cost": {
+                        "specimen": 2
+                    },
+                    "reward": {
+                        "tleilaxuIcon": 2
+                    }
+                }
+            },
+            "revealReward": {
+                "tradeReward": {
+                    "cost": {
+                        "troop": 2
+                    },
+                    "reward": {
+                        "specimen": 2
+                    }
+                },
+                "reward": {
+                    "persuasion": 2
+                }
+            }
+        },
+        {
+            "name": "freighterFleet",
+            "cost": 2,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "spiceTrade": true
+                }
+            },
+            "droppedReward": {
+                "moveFreighter": 1
+            },
+            "trashedReward": {
+                "moveFreighter": 1
+            },
+            "revealReward": {
+                "reward": {
+                    "moveFreighter": 1
+                }
+            }
+        },
+        {
+            "name": "webOfPower",
+            "cost": 4,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "beneGesserit": true
+            },
+            "agentAccess": {
+                "infiltrate": {
+                    "factionAccess": {
+                        "beneGesserit": true
+                    }
+                }
+            },
+            "agentReward": {
+                "conditionalReward": {
+                    "condition": "If you have 2 Emperor Influence",
+                    "reward": {
+                        "solari": 2
+                    }
+                },
+                "conditionalReward2": {
+                    "condition": "If you have 2 Spacing Guild Influence",
+                    "reward": {
+                        "drawCard": 1
+                    }
+                },
+                "conditionalReward3": {
+                    "condition": "If you have 2 Fremen Influence",
+                    "reward": {
+                        "water": 1
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "gainInfluence": {
+                        "any": 1
+                    },
+                    "persuasion": 1
+                }
+            }
+        },
+        {
+            "name": "fedaykinDeathCommando",
+            "cost": 3,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "fremen": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "trashCard": 1
+                }
+            },
+            "revealReward": {
+                "fremenBond": {
+                    "strength": 3
+                },
+                "reward": {
+                    "persuasion": 1
+                }
+            }
+        },
+        {
+            "name": "missionariaProtectiva",
+            "cost": 1,
+            "count": 2,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "beneGesserit": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true
+                }
+            },
+            "agentReward": {
+                "conditionalReward": {
+                    "condition": "If you have another Bene Gesserit card in play",
+                    "reward": {
+                        "gainInfluence": {
+                            "any": 1
+                        }
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1
+                }
+            }
+        },
+        {
+            "name": "firmGrip",
+            "cost": 4,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "emperor": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true,
+                    "factionAccess": {
+                        "emperor": true
+                    }
+                }
+            },
+            "agentReward": {
+                "tradeReward": {
+                    "cost": {
+                        "solari": 2
+                    },
+                    "reward": {
+                        "gainInfluence": {
+                            "choiceReward": {
+                                "spacingGuild": 1,
+                                "beneGesserit": 1,
+                                "fremen": 1
+                            }
+                        }
+                    }
+                }
+            },
+            "revealReward": {
+                "conditionalReward": {
+                    "condition": "If you have Emperor Alliance",
+                    "reward": {
+                        "persuasion": 4
+                    }
+                }
+            }
+        },
+        {
+            "name": "duncanLoyalBlade",
+            "cost": 5,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "factionAccess": {
+                        "fremen": true
+                    }
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "troop": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "specialEffect": "Trash this card to deploy or retreat any number of your troops from or to your garrison.",
+                    "strength": 2
+                }
+            }
+        },
+        {
+            "name": "shaiHulud",
+            "cost": 7,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "spiceTrade": true
+                }
+            },
+            "purchaseReward": {
+                "trashCard": 1
+            },
+            "agentReward": {
+                "tradeReward": {
+                    "cost": {
+                        "trashCard": 1
+                    },
+                    "reward": {
+                        "troop": 2
+                    }
+                }
+            },
+            "revealReward": {
+                "fremenBond": {
+                    "strength": 5
+                }
+            }
+        },
+        {
+            "name": "weirdingWay",
+            "cost": 3,
+            "count": 1,
+            "graft": false,
+            "special": true,
+            "tag": {
+                "beneGesserit": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "specialEffect": "You may take another turn immediately after this one."
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 2
+                }
+            }
+        },
+        {
+            "name": "sayyadina",
+            "cost": 3,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "beneGesserit": true,
+                "fremen": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "beneGesserit": true,
+                        "fremen": true
+                    }
+                }
+            },
+            "agentReward": {
+                "tradeReward": {
+                    "cost": {
+                        "water": 3
+                    },
+                    "reward": {
+                        "victoryPoint": 1
+                    }
+                }
+            },
+            "revealReward": {
+                "fremenBond": {
+                    "persuasion": 3
+                }
+            }
+        },
+        {
+            "name": "esmarTuek",
+            "cost": 5,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "spacingGuild": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "tradeReward": {
+                    "cost": {
+                        "spice": 1
+                    },
+                    "reward": {
+                        "gainInfluence": {
+                            "spacingGuild": 1
+                        },
+                        "drawCard": 1
+                    }
+                }
+            },
+            "droppedReward": {
+                "spice": 2,
+                "solari": 2
+            },
+            "trashedReward": {
+                "spice": 2,
+                "solari": 2
+            },
+            "revealReward": {
+                "reward": {
+                    "solari": 2,
+                    "spice": 2
+                }
+            }
+        },
+        {
+            "name": "embeddedAgent",
+            "cost": 5,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "beneGesserit": true
+            },
+            "agentAccess": {
+                "infiltrate": {
+                    "landsraad": true
+                }
+            },
+            "agentReward": {
+                "conditionalReward": {
+                    "condition": "If you have another Bene Gesserit card in play",
+                    "reward": {
+                        "moveFreighter": 2
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "intrigueCard": 1,
+                    "persuasion": 1
+                }
+            }
+        },
+        {
+            "name": "forHumanity",
+            "cost": 7,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "beneGesserit": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true,
+                    "spiceTrade": true,
+                    "factionAccess": {
+                        "beneGesserit": true
+                    }
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "gainInfluence": {
+                        "any": 1
+                    }
+                }
+            },
+            "revealReward": {
+                "conditionalReward": {
+                    "condition": "If you have Bene Gesserit Alliance",
+                    "reward": {
+                        "tradeReward": {
+                            "cost": {
+                                "loseInfluence": {
+                                    "any": 2
+                                }
+                            },
+                            "reward": {
+                                "victoryPoint": 1
+                            }
+                        }
+                    }
+                },
+                "reward": {
+                    "persuasion": 2
+                }
+            }
+        },
+        {
+            "name": "lisanAlGaib",
+            "cost": 4,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "beneGesserit": true,
+                "fremen": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "spiceTrade": true,
+                    "factionAccess": {
+                        "fremen": true
+                    }
+                }
+            },
+            "purchaseReward": {
+                "spice": 1
+            },
+            "agentReward": {
+                "conditionalReward": {
+                    "condition": "If you have another Bene Gesserit card in play",
+                    "reward": {
+                        "gainInfluence": {
+                            "fremen": 1
+                        }
+                    }
+                }
+            },
+            "revealReward": {
+                "fremenBond": {
+                    "strength": 2
+                },
+                "reward": {
+                    "persuasion": 1
+                }
+            }
+        },
+        {
+            "name": "localFence",
+            "cost": 3,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "city": true
+                }
+            },
+            "agentReward": {
+                "choiceReward": {
+                    "tradeReward": {
+                        "cost": {
+                            "spice": 2
+                        },
+                        "reward": {
+                            "solari": 5
+                        }
+                    },
+                    "tradeReward2": {
+                        "cost": {
+                            "solari": 5
+                        },
+                        "reward": {
+                            "spice": 4
+                        }
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 2
+                }
+            }
+        },
+        {
+            "name": "desertAmbush",
+            "cost": 3,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "fremen": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "specialEffect": "For each troop you deploy this turn, you may force an enemy unit to retreat."
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 1
+                }
+            }
+        },
+        {
+            "name": "corruptSmuggler",
+            "cost": 3,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "spacingGuild": true,
+                "fremen": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "spiceTrade": true,
+                    "factionAccess": {
+                        "spacingGuild": true
+                    }
+                }
+            },
+            "agentReward": {
+                "graftedReward": {
+                    "spice": 2
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "strength": 1
+                }
+            }
+        },
+        {
+            "name": "keysToPower",
+            "cost": 5,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "spacingGuild": true,
+                "beneGesserit": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true,
+                    "factionAccess": {
+                        "spacingGuild": true,
+                        "beneGesserit": true
+                    }
+                }
+            },
+            "agentReward": {
+                "conditionalReward": {
+                    "condition": "If you have 2 Emperor Influence",
+                    "reward": {
+                        "spice": 2
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 2
+                }
+            }
+        },
+        {
+            "name": "chani",
+            "cost": 5,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "fremen": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "spiceTrade": true,
+                    "factionAccess": {
+                        "fremen": true
+                    }
+                }
+            },
+            "purchaseReward": {
+                "water": 1
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 2,
+                    "specialEffect": "Retreat any number of your troops."
+                }
+            }
+        },
+        {
+            "name": "spiceTrader",
+            "cost": 4,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "fremen": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "conditionalReward": {
+                    "condition": "If you have 2 Fremen Influence",
+                    "reward": {
+                        "dropReward": {
+                            "drop": 1,
+                            "reward": {
+                                "spice": 2
+                            }
+                        }
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 2,
+                    "strength": 1
+                }
+            }
+        },
+        {
+            "name": "guildChiefAdministrator",
+            "cost": 4,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "spacingGuild": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "spiceTrade": true,
+                    "factionAccess": {
+                        "spacingGuild": true
+                    }
+                }
+            },
+            "agentReward": {
+                "dropReward": {
+                    "drop": 1,
+                    "reward": {
+                        "trashCard": 1
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "moveFreighter": 1,
+                    "persuasion": 1
+                }
+            }
+        },
+        {
+            "name": "ladyJessica",
+            "cost": 7,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "beneGesserit": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "landsraad": true,
+                    "spiceTrade": true,
+                    "factionAccess": {
+                        "beneGesserit": true
+                    }
+                }
+            },
+            "purchaseReward": {
+                "gainInfluence": {
+                    "any": 1
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "drawCard": 2
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 3,
+                    "strength": 1
+                }
+            }
+        },
+        {
+            "name": "interstellarConspiracy",
+            "cost": 4,
+            "count": 1,
+            "graft": true,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "city": true
+                }
+            },
+            "agentReward": {
+                "conditionalReward": {
+                    "condition": "If grafted with an Emperor or Spacing Guild card",
+                    "reward": {
+                        "gainInfluence": {
+                            "any": 1
+                        }
+                    }
+                },
+                "reward": {
+                    "spice": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 2
+                }
+            }
+        },
+        {
+            "name": "reverendMotherMohiam",
+            "cost": 6,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "emperor": true,
+                "beneGesserit": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "emperor": true,
+                        "beneGesserit": true
+                    }
+                }
+            },
+            "agentReward": {
+                "conditionalReward": {
+                    "condition": "If you have another Bene Gesserit card in play",
+                    "reward": "Each opponent discards two cards."
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 2,
+                    "spice": 2
+                }
+            }
+        },
+        {
+            "name": "lietKynes",
+            "cost": 5,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "emperor": true,
+                "fremen": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "factionAccess": {
+                        "fremen": true
+                    }
+                }
+            },
+            "purchaseReward": {
+                "gainInfluence": {
+                    "emperor": 1
+                }
+            },
+            "revealReward": {
+                "conditionalReward": {
+                    "condition": "For each Fremen card you have in play (including this one)",
+                    "reward": {
+                        "persuasion": 2
+                    }
+                }
+            }
+        },
+        {
+            "name": "guildAccord",
+            "cost": 6,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "spacingGuild": true
+            },
+            "agentAccess": {
+                "infiltrate": {
+                    "factionAccess": {
+                        "spacingGuild": true
+                    }
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "specialEffect": "It costs 2 spice less to send an Agent to the Heighliner board space with this card."
+                }
+            },
+            "droppedReward": {
+                "water": 1,
+                "conditionalReward": {
+                    "condition": "If you have Spacing Guild Alliance.",
+                    "reward": {
+                        "spice": 3
+                    }
+                }
+            },
+            "trashedReward": {
+                "water": 1,
+                "conditionalReward": {
+                    "condition": "If you have Spacing Guild Alliance.",
+                    "reward": {
+                        "spice": 3
+                    }
+                }
+            },
+            "revealReward": {
+                "conditionalReward": {
+                    "condition": "If you have Spacing Guild Alliance.",
+                    "reward": {
+                        "spice": 3
+                    }
+                },
+                "reward": {
+                    "water": 1
+                }
+            }
+        },
+        {
+            "name": "piterDeVries",
+            "cost": 5,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "landsraad": true
+                }
+            },
+            "agentReward": {
+                "reward": {
+                    "intrigueCard": 1
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 3,
+                    "strength": 1
+                }
+            }
+        },
+        {
+            "name": "satelliteBan",
+            "cost": 5,
+            "count": 1,
+            "graft": false,
+            "special": false,
+            "tag": {
+                "spacingGuild": true,
+                "fremen": true
+            },
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "spacingGuild": true,
+                        "fremen": true
+                    }
+                }
+            },
+            "agentReward": {
+                "dropReward": {
+                    "drop": 1,
+                    "reward": {
+                        "spice": 1,
+                        "water": 1
+                    }
+                }
+            },
+            "revealReward": {
+                "reward": {
+                    "persuasion": 1,
+                    "specialEffect": "Retreat up to two of your troops."
+                }
+            }
+        }
+    ],
+    "tleilaxuRowDeck": [
+        {
+            "name": "chairDog",
+            "cost": 2,
+            "count": 1,
+            "graft": true,
+            "specialRules": true,
+            "agentAccess": {
+                "standard": {
+                    "city": true
+                }
+            },
+            "agentReward": {
+                "specialEffect": "At the start of your Reveal turn, return the other grafted card from play to your hand."
+            },
+            "revealReward": {
+                "persuasion": 1
+            }
+        },
+        {
+            "name": "faceDancer",
+            "cost": 2,
+            "count": 1,
+            "graft": true,
+            "specialRules": false,
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "emperor": true,
+                        "spacingGuild": true,
+                        "fremen": true
+                    }
+                }
+            },
+            "agentReward": {
+                "drawCard": 1
+            },
+            "revealReward": {
+                "persuasion": 1
+            }
+        },
+        {
+            "name": "subjectX137",
+            "cost": 2,
+            "count": 1,
+            "graft": false,
+            "specialRules": false,
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true,
+                    "spiceTrade": true
+                }
+            },
+            "purchaseReward": {
+                "tleilaxuIcon": 1
+            },
+            "agentReward": {
+                "geneticMarker": {
+                    "1": {
+                        "tleilaxuIcon": 1
+                    }
+                }
+            },
+            "revealReward": {
+                "persuasion": 1
+            }
+        },
+        {
+            "name": "ghola",
+            "cost": 3,
+            "count": 1,
+            "graft": true,
+            "specialRules": true,
+            "agentAccess": {
+                "standard": {
+                    "city": true
+                }
+            },
+            "agentReward": {
+                "specialEffect": "This card has the same Agent box as the other grafted card."
+            },
+            "revealReward": {
+                "persuasion": 1,
+                "strength": 1
+            }
+        },
+        {
+            "name": "twistedMentat",
+            "cost": 4,
+            "count": 1,
+            "graft": true,
+            "specialRules": true,
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "landsraad": true
+                }
+            },
+            "agentReward": {
+                "specialEffect": "You may recall the agent you sent this turn."
+            },
+            "revealReward": {
+                "persuasion": 1,
+                "specimen": 1,
+                "strength": 1
+            }
+        },
+        {
+            "name": "corrinoGenes",
+            "cost": 1,
+            "count": 1,
+            "graft": false,
+            "specialRules": false,
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "emperor": 1
+                    }
+                }
+            },
+            "purchaseReward": {
+                "solari": 2
+            },
+            "agentReward": {
+                "graftedReward": {
+                    "tleilaxuIcon": 1
+                }
+            },
+            "revealReward": {
+                "persuasion": 1
+            }
+        },
+        {
+            "name": "piterGeniusAdvisor",
+            "cost": 3,
+            "count": 1,
+            "graft": false,
+            "specialRules": false,
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true,
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "tradeReward": {
+                    "cost": {
+                        "troop": 1
+                    },
+                    "reward": {
+                        "drawCard": 2,
+                        "research": 1
+                    }
+                }
+            },
+            "revealReward": {
+                "persuasion": 1,
+                "strength": 1
+            }
+        },
+        {
+            "name": "scientificBreakthrough",
+            "cost": 3,
+            "count": 1,
+            "graft": false,
+            "specialRules": false,
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "landsraad": true,
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "research": 1,
+                "geneticMarker": {
+                    "2": {
+                        "trashedReward": {
+                            "victoryPoint": 1
+                        }
+                    }
+                }
+            },
+            "revealReward": {
+                "persuasion": 1,
+                "strength": 1
+            }
+        },
+        {
+            "name": "stitchedHorror",
+            "cost": 3,
+            "count": 1,
+            "graft": true,
+            "specialRules": false,
+            "agentAccess": {
+                "standard": {
+                    "city": true
+                }
+            },
+            "agentReward": {
+                "chooseTwo": {
+                    "tleilaxuIcon": 1,
+                    "trashCard": 1,
+                    "troop": 1,
+                    "water": 1
+                }
+            },
+            "revealReward": {
+                "persuasion": 1,
+                "strength": 1
+            }
+        },
+        {
+            "name": "tleilaxuInfiltrator",
+            "cost": 2,
+            "count": 1,
+            "graft": true,
+            "specialRules": true,
+            "agentAccess": {
+                "standard": {
+                    "city": true
+                }
+            },
+            "agentReward": {
+                "drawCard": 1,
+                "geneticMarker": {
+                    "2": {
+                        "intrigueCard": 1
+                    }
+                },
+                "specialEffect": "Enemy Agents don't block your Agent this turn."
+            },
+            "revealReward": {
+                "persuasion": 1
+            }
+        },
+        {
+            "name": "faceDancerInitiate",
+            "cost": 1,
+            "count": 1,
+            "graft": true,
+            "specialRules": false,
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "emperor": true,
+                        "spacingGuild": true,
+                        "beneGesserit": true,
+                        "fremen": true
+                    }
+                }
+            },
+            "revealReward": {
+                "persuasion": 1
+            }
+        },
+        {
+            "name": "piterGeniusAdvisor",
+            "cost": 3,
+            "count": 1,
+            "graft": true,
+            "specialRules": false,
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true,
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "tradeReward": {
+                    "cost": {
+                        "troop": 1
+                    },
+                    "reward": {
+                        "drawCard": 2,
+                        "research": 1
+                    }
+                }
+            },
+            "revealReward": {
+                "persuasion": 1,
+                "strength": 1
+            }
+        },
+        {
+            "name": "sligFarmer",
+            "cost": 2,
+            "count": 1,
+            "graft": true,
+            "specialRules": true,
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true
+                }
+            },
+            "agentReward": {
+                "specialEffect": "Gain 1 Solari for each Agent icon on tthe other grafted card.",
+                "tradeReward": {
+                    "cost": {
+                        "solari": 5,
+                        "reward": {
+                            "tleilaxuIcon": 1
+                        }
+                    }
+                }
+            },
+            "revealReward": {
+                "persuasion": 1
+            }
+        },
+        {
+            "name": "beguilingPheromones",
+            "cost": 3,
+            "count": 1,
+            "graft": true,
+            "specialRules": true,
+            "agentAccess": {
+                "standard": {
+                    "city": true,
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "specialEffect": "If you sent an Agent to a Faction board space this turn, trash one of the grafted cards and gain an additional Influence with that Faction."
+            },
+            "revealReward": {
+                "persuasion": 1,
+                "strength": 1
+            }
+        },
+        {
+            "name": "contaminator",
+            "cost": 1,
+            "count": 1,
+            "graft": false,
+            "specialRules": false,
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "fremen": true
+                    }
+                }
+            },
+            "agentReward": {
+                "tleilaxuIcon": 1
+            },
+            "revealReward": {
+                "persuasion": 1
+            }
+        },
+        {
+            "name": "guildImpersonator",
+            "cost": 2,
+            "count": 1,
+            "graft": true,
+            "specialRules": false,
+            "agentAccess": {
+                "standard": {
+                    "factionAccess": {
+                        "spacingGuild": true
+                    }
+                }
+            },
+            "agentReward": {
+                "conditionalReward": {
+                    "condition": "If you gain spice this turn.",
+                    "reward": {
+                        "gainInfluence": {
+                            "spacingGuild": 1
+                        }
+                    }
+                }
+            },
+            "revealReward": {
+                "persuasion": 1
+            }
+        },
+        {
+            "name": "fromTheTanks",
+            "cost": 2,
+            "count": 1,
+            "graft": false,
+            "specialRules": false,
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true
+                }
+            },
+            "agentReward": {
+                "troop": 2
+            },
+            "revealReward": {
+                "persuasion": 1
+            }
+        },
+        {
+            "name": "industrialEspionage",
+            "cost": 1,
+            "count": 1,
+            "graft": false,
+            "specialRules": false,
+            "agentAccess": {
+                "standard": {
+                    "landsraad": true
+                }
+            },
+            "agentReward": {
+                "drawCard": 1,
+                "graftedReward": {
+                    "research": 1,
+                    "troop": 1
+                }
+            },
+            "revealReward": {
+                "persuasion": 1
+            }
+        },
+        {
+            "name": "usurp",
+            "cost": 4,
+            "count": 1,
+            "graft": true,
+            "specialRules": true,
+            "agentReward": {
+                "specialEffect": "You may graft this to a card in the Imperium Row without acquiring it. If you do, trash that card at the end of your turn."
+            },
+            "revealReward": {
+                "persuasion": 1,
+                "specimen": 1,
+                "strength": 1
+            }
+        },
+        {
+            "name": "unnaturalReflexes",
+            "cost": 3,
+            "count": 1,
+            "graft": true,
+            "specialRules": false,
+            "agentAccess": {
+                "standard": {
+                    "spiceTrade": true
+                }
+            },
+            "agentReward": {
+                "geneticMarker": {
+                    "1": {
+                        "drawCard": 2
+                    }
+                }
+            },
+            "revealReward": {
+                "persuasion": 1,
+                "strength": 1
+            }
+        }
+    ]
+}
